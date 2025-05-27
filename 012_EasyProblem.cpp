@@ -1,16 +1,16 @@
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
-
-int main() {
-    int n, opinion;
-    cin >> n;
-
-    for (int i = 0; i < n; ++i) {
-        cin >> opinion;
-        if (opinion == 1) {
-            cout << "HARD\n";
-            return 0;
+int main(){
+    int n,sign=0;
+    cin>>n;
+    for(int i=0;i<n;i++){
+        int m;
+        cin>>m;
+        if(m==1){
+            cout<<"HARD";
+            sign=1;
+            break;
         }
     }
-    cout << "EASY\n";
+    if(sign==0) cout<<"EASY";
 }
