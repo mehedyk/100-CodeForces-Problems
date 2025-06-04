@@ -4,11 +4,11 @@ int main(){
     int n;
     double sum=0;
     cin>>n;
-    int divident=n;
+    int dividend=n;
     while(n--){
         double m;
         cin>>m;
         sum+=m;
     }
-    cout<<fixed<<setprecision(12)<<sum/divident;
+    cout<<fixed<<setprecision(12)<<sum/dividend;
 }
